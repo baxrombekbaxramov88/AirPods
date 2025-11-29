@@ -91,7 +91,7 @@ body {
 
 /* ======================================= Model start ======================================== */
 
-.model, .model-3 {
+.model, .model-3, .phones {
     background: #121212;
     padding: 40px 0;
 }
@@ -142,4 +142,84 @@ body {
     background: #c4c4c4;
     left: -25%;
     bottom: 50%;
+}
+
+.phones .container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.phones {
+    padding: 79px 0;
+}
+
+.phones__card {
+    width: 255px;
+    height: 312px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phones__name {
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.phones__image {
+    padding: 10px 0;
+}
+
+.phones__text {
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.phones__view {
+    width: 161px;
+    height: 34px;
+    background: #151515;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======================================== Footer start ====================================== */
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 15px;
+}
+
+.footer__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.footer__link {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer__payments {
+    display: flex;
+    align-items: center;
+    column-gap: 29px;
+}
+
+.footer__payments i {
+    font-size: 70px;
+    color: white;
 }
