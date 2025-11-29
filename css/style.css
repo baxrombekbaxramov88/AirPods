@@ -1,0 +1,145 @@
+@import 'font.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+body {
+    font-family: 'Montserrat';
+    background: #282828;
+    color: white;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ====================================== Navbar start ============================================ */
+
+.nav {
+    box-shadow: 0px 4px 20px 0px #00000040;
+    padding: 6px 0;
+}
+
+.nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.nav__link {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav__search {
+    color: white;
+    display: flex;
+    column-gap: 25px;
+}
+
+/* ============================================ Header start ======================================= */
+
+.header {
+    background: url(../image/Header.png) no-repeat center center / cover;
+    min-height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 100px;
+    font-family: 'ProstoOne';
+    font-weight: 400;
+}
+
+.header__link {
+    background: white;
+    color: #000;
+    padding: 17px 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 100%;
+    border-radius: 10px;
+}
+
+/* ======================================= Model start ======================================== */
+
+.model, .model-3 {
+    background: #121212;
+    padding: 40px 0;
+}
+
+.model .container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.model__text {
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.model:last-of-type .container {
+    align-items: center;
+    column-gap: 100px;
+}
+
+.model-3 .container {
+    display: flex;
+    align-items: center;
+    column-gap: 88px;
+}
+
+.model-3__text {
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+}
+
+.model-3__text:first-of-type::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background: #c4c4c4;
+    right: -25%;
+    bottom: 50%;
+}
+
+.model-3__text:last-of-type::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background: #c4c4c4;
+    left: -25%;
+    bottom: 50%;
+}
